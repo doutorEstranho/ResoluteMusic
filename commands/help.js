@@ -30,7 +30,7 @@ module.exports = {
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
             if(!command)return message.channel.send("Comando invalido")
             let commandinfo = new MessageEmbed()
-            .setTitle("Command: "+command.info.name+" info")
+            .setTitle("Comando: "+command.info.name+" info")
             .setColor("YELLOW")
             .setDescription(`
 Name: ${command.info.name}

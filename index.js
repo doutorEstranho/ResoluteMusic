@@ -1,4 +1,4 @@
-require("dotenv").config();//Loading .env
+require("dotenv").config();//Carregando o .env
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 

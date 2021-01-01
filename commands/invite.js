@@ -10,7 +10,7 @@ module.exports = {
 
   run: async function (client, message, args) {
     
-    //set the permissions id here (https://discordapi.com/permissions.html)
+    //
     var permissions = 37080128;
     
     let invite = new MessageEmbed()

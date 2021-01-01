@@ -2,7 +2,7 @@ require("dotenv").config();//Carregando o .env
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 
-const client = new Client();//Making a discord bot client
+const client = new Client();//discord client.
 client.commands = new Collection();//Making client.commands as a Discord.js Collection
 client.queue = new Map()
 

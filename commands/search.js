@@ -35,7 +35,7 @@ module.exports = {
                         .setAuthor(`Resultados para \"${args.join(" ")}\"`, message.author.displayAvatarURL())
                         .setDescription(`${searched.map(video2 => `**\`${++index}\`  |** [\`${video2.title}\`](${video2.url}) - \`${video2.durationFormatted}\``).join("\n")}`)
                         .setFooter("Digite o número da música para adicioná-la à lista de reprodução");
-                    // eslint-disable-next-line max-depth
+                    // 
                     message.channel.send(embedPlay).then(m => m.delete({
                         timeout: 15000
                     }))
@@ -116,7 +116,7 @@ module.exports = {
     if (!song){
       if (!online.afk) {
         sendError("Sai do canal pois não tem nenhuma musica na fila!.", message.channel)
-        message.guild.me.voice.channel.leave();//If you want your bot stay in vc 24/7 remove this line :D
+        message.guild.me.voice.channel.leave();//
         message.client.queue.delete(message.guild.id);
       }
             return message.client.queue.delete(message.guild.id);

@@ -22,7 +22,7 @@ try{
     sendError(`❌ **|** Removida: **\`${song[0].title}\`** Da fila.`,queue.textChannel).catch(console.error);
                    message.react("✅")
 } catch (error) {
-        return sendError(`:notes: An unexpected error occurred.\nPossible type: ${error}`, message.channel);
+        return sendError(`:notes: Um erro inesperado ocorreu\nPossivel erro: ${error}`, message.channel);
       }
   },
 };

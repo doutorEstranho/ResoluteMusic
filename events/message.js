@@ -1,7 +1,7 @@
 module.exports = async (client, message) => {
   if (message.author.bot) return;
 
-  //Prefixes also have mention match
+  //Prefixo
   const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
   const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : client.config.prefix;
 

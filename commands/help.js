@@ -20,7 +20,7 @@ module.exports = {
         .setAuthor("Comandos "+client.user.username, "https://cdn.discordapp.com/attachments/754170388115619872/784270025577463849/7b7a49c20326e3cbfdccb534ca0366f1.gif")
         .setColor("BLUE")
         .setDescription(allcmds)
-        .setFooter(`Para obter informações Complexas de cada comando ultilize`)
+        .setFooter(`Para obter informações Complexas de cada comando ultilize | s.help <nome do comando>`)
 
         if(!args[0])return message.channel.send(embed)
         else {

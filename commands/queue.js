@@ -85,7 +85,7 @@ function generateQueueEmbed(message, queue) {
     .addField("Canal de texto:", serverQueue.textChannel, true)
     .addField("Canal de voz:", serverQueue.voiceChannel, true)
     .setFooter("Volume:"+serverQueue.volume)
-     if(serverQueue.songs.length === 1)embed.setDescription(`Sem músicas para tocar em seguida,você pode adicionar músicas por \`\`${message.client.config.prefix}play <song_name>\`\``)
+     if(serverQueue.songs.length === 1)embed.setDescription(`Sem músicas para tocar em seguida,você pode adicionar músicas por \`\`${message.client.config.prefix}play <Nome da música>\`\``)
 
     embeds.push(embed);
   }

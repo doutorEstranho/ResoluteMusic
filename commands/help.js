@@ -33,9 +33,9 @@ module.exports = {
             .setTitle("Comando: "+command.info.name+" info")
             .setColor("YELLOW")
             .setDescription(`
-Name: ${command.info.name}
+Nome: ${command.info.name}
 Descrição: ${command.info.description}
-Usage: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
+Use: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
 Apelido: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)

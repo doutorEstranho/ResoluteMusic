@@ -19,7 +19,7 @@ module.exports = {
 
 	run: async function (client, message, args) {
 		const channel = message.member.voice.channel;
-		if (!channel) return sendError("Eu precisso estar em um canal de voz para tocar", message.channel);
+		if (!channel) return sendError("Eu precisso estar em um canal de voz para tocar :(", message.channel);
 		const url = args[0] ? args[0].replace(/<(.+)>/g, "$1") : "";
 		var searchString = args.join(" ");
 		const permissions = channel.permissionsFor(message.client.user);

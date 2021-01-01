@@ -33,8 +33,8 @@ module.exports = {
 				if (!playlist) return sendError("Playlist não encontrada.", message.channel)
 				const videos = await playlist.items;
 				for (const video of videos) {
-					// eslint-disable-line no-await-in-loop
-					await handleVideo(video, message, channel, true); // eslint-disable-line no-await-in-loop
+					// 
+					await handleVideo(video, message, channel, true); // 
 				}
 				return message.channel.send({
 					embed: {

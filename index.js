@@ -2,7 +2,7 @@ require("dotenv").config();//Carregando o .env
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 
-const client = new Client();//discord client.
+const client = new Client();//Carregando comentários.
 client.commands = new Collection();
 client.queue = new Map()
 

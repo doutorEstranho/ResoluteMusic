@@ -4,7 +4,7 @@ const sendError = require("../util/error");
 module.exports = {
   info: {
     name: "loop",
-    description: "Colocar Loop na musica",
+    description: "Habilitar o loop",
     usage: "",
     aliases: ["l"],
   },

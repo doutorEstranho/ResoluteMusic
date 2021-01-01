@@ -1,0 +1,2 @@
+# SprayMusic
+SprayMusic Discord bot

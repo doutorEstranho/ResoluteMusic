@@ -20,7 +20,7 @@ module.exports = {
         .setAuthor("Comandos "+client.user.username, "https://cdn.discordapp.com/attachments/754170388115619872/784270025577463849/7b7a49c20326e3cbfdccb534ca0366f1.gif")
         .setColor("BLUE")
         .setDescription(allcmds)
-        .setFooter(`Para obter informações de cada comando que você pode fazer você pode dar ${client.config.prefix}help [command] | SprayMusic\nCaso não consiga ver no celular acesse esse site -> http://spraymusic.glitch.me/`)
+        .setFooter(`Para obter informações Complexas de cada comando ultilize`)
 
         if(!args[0])return message.channel.send(embed)
         else {

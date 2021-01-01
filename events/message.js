@@ -13,10 +13,9 @@ module.exports = async (client, message) => {
 
   
   const cmd = client.commands.get(command);
-  //Searching a command aliases
+
   const aliases = client.commands.find(x => x.info.aliases.includes(command))
 
-  //if(message.channel.type === "dm")return message.channel.send("None of the commands work in DMs. So please use commands in server!")
 process.on("unhandledRejection", (reason, promise) => {
     try {
         console.error("Unhandled Rejection at: ", promise, "reason: ", reason.stack || reason);
@@ -27,8 +26,8 @@ process.on("unhandledRejection", (reason, promise) => {
 require('events').EventEmitter.defaultMaxListeners = 25
 
 
-  //Executing the codes when we get the command or aliases
-  if(cmd){
+
+if(cmd){
     cmd.run(client, message, args);
   }else if(aliases){
     aliases.run(client, message, args);

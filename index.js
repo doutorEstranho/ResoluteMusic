@@ -20,7 +20,7 @@ fs.readdir(__dirname + "/events/", (err, files) => {
     console.log("------------------------------")
     console.log("Carregando comando: "+eventName)
     console.log("------------------------------")
-    console.log("Made By Spray#1644")
+    console.log("Bot feito pelo Spray")
   });
 });
 

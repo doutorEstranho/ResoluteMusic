@@ -35,7 +35,7 @@ fs.readdir("./commands/", (err, files) => {
     console.log("------------------------------")
     console.log("Carregando comando: "+commandName)
     console.log("------------------------------")
-    console.log("Made By Spray#1644")
+    console.log("Feito pelo Spray")
   });
 });
 

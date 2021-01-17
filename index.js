@@ -18,9 +18,9 @@ fs.readdir(__dirname + "/events/", (err, files) => {
     let eventName = file.split(".")[0];
     client.on(eventName, event.bind(null, client));
     console.log("------------------------------")
-    console.log("Carregando comando: "+eventName)
+    console.log("Carregando Evento: "+eventName)
     console.log("------------------------------")
-    console.log("Bot feito pelo Spray")
+    console.log("Bot desenvolvido pelo Spray")
   });
 });
 
@@ -33,7 +33,7 @@ fs.readdir("./commands/", (err, files) => {
     let commandName = file.split(".")[0];
     client.commands.set(commandName, props);
     console.log("------------------------------")
-    console.log("Carregando comando: "+commandName)
+    console.log("Carregando Comando: "+commandName)
     console.log("------------------------------")
     console.log("Feito pelo Spray")
   });

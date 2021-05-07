@@ -1,7 +1,7 @@
 {
-  "name": "spraymusic",
+  "name": "resolute",
   "version": "1.0.0",
-  "description": "Bot Musica",
+  "description": "music",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

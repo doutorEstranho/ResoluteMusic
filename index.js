@@ -1,8 +1,8 @@
-require("dotenv").config();//Carregando o .env
+require("dotenv").config();
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 
-const client = new Client();//Carregando Client
+const client = new Client();
 client.commands = new Collection();
 client.queue = new Map()
 
@@ -10,7 +10,6 @@ client.config = {
   prefix: process.env.PREFIX
 }
 
-//Carregando eventos
 fs.readdir(__dirname + "/events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
@@ -20,11 +19,9 @@ fs.readdir(__dirname + "/events/", (err, files) => {
     console.log("------------------------------")
     console.log("Carregando Evento: "+eventName)
     console.log("------------------------------")
-    console.log("Bot desenvolvido pelo Spray")
   });
 });
 
-//Carregando comandos
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
@@ -35,9 +32,7 @@ fs.readdir("./commands/", (err, files) => {
     console.log("------------------------------")
     console.log("Carregando Comando: "+commandName)
     console.log("------------------------------")
-    console.log("Feito pelo Spray")
   });
 });
 
-//Logando com o discord
 client.login(process.env.TOKEN)

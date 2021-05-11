@@ -19,10 +19,10 @@ module.exports = {
     if(parseInt(args[0]) > 150 ||(args[0]) < 0) return sendError('Você não pode definir o volume para mais de 150. ou menor que 0',message.channel).catch(err => console.log(err));
     serverQueue.volume = args[0]; 
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
-    let xd = new MessageEmbed()
+    let spray = new MessageEmbed()
     .setDescription(`Eu ajustei o volume para: **${args[0]/1}/100**`)
     .setAuthor("Gerenciamento do volume", "https://cdn.discordapp.com/attachments/754170388115619872/784270025577463849/7b7a49c20326e3cbfdccb534ca0366f1.gif")
     .setColor("BLUE")
-    return message.channel.send(xd);
+    return message.channel.send(spray);
   },
 };

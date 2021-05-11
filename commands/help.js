@@ -4,15 +4,23 @@ exports.run = async (bot, message, args) => {
     .setColor('#e1ff00')
     .setDescription(`> ***Olá ${message.author}, aqui estão meus comandos de música!***
       \n » **Comandos:**\n
-      > **<:spr4yxyz:837798446584168468> | s.**
-      > **<:spr4yxyz:837798446584168468> | s.depositar**
-      > **<:spr4yxyz:837798446584168468> | s.leaderboard**
-      > **<:spr4yxyz:837798446584168468> | s.money**
-      > **<:spr4yxyz:837798446584168468> | s.pay**
-      > **<:spr4yxyz:837798446584168468> | s.roubar**
-      > **<:spr4yxyz:837798446584168468> | s.saque**
-      > **<:spr4yxyz:837798446584168468> | s.setmoney (Admin)**
-      > **<:spr4yxyz:837798446584168468> | s.trabalhar**
+      > <:spr4yxyz:837798446584168468> | \`s.afk\` 
+      > <:spr4yxyz:837798446584168468> | \`s.help\` 
+      > <:spr4yxyz:837798446584168468> | \`s.invite\`
+      > <:spr4yxyz:837798446584168468> | \`s.loop\` 
+      > <:spr4yxyz:837798446584168468> | \`s.lyrics\` <nome-musica>
+      > <:spr4yxyz:837798446584168468> | \`s.nowplaying\` 
+      > <:spr4yxyz:837798446584168468> | \`s.pause\`
+      > <:spr4yxyz:837798446584168468> | \`s.play\` <link> ou o nome da música
+      > <:spr4yxyz:837798446584168468> | \`s.playlist\` <link>
+      > <:spr4yxyz:837798446584168468> | \`s.remove\`
+      > <:spr4yxyz:837798446584168468> | \`s.resume\`
+      > <:spr4yxyz:837798446584168468> | \`s.search\` 
+      > <:spr4yxyz:837798446584168468> | \`s.shuffle\` 
+      > <:spr4yxyz:837798446584168468> | \`s.skip\` 
+      > <:spr4yxyz:837798446584168468> | \`s.skip\` 
+      > <:spr4yxyz:837798446584168468> | \`s.stop\` 
+      > <:spr4yxyz:837798446584168468> | \`s.volume\` <0/200>
       \n » **Links:**
       > resolutebot.xyz/music
     `)

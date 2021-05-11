@@ -14,7 +14,7 @@ module.exports = {
       return message.channel.send({
                         embed: {
                             color: "GREEN",
-                            description: `**Use**: \`${client.config.prefix}skipto <numero>\``
+                            description: `**<:info:835206734225473546> | Use**: \`${client.config.prefix}skipto <numero>\``
                         }
    
                    }).catch(console.error);
@@ -23,7 +23,7 @@ module.exports = {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return sendError("Não ha fila",message.channel).catch(console.error);
     if (args[0] > queue.songs.length)
-      return sendError(`The queue is only ${queue.songs.length} songs long!`,message.channel).catch(console.error);
+      return sendError(`${queue.songs.length}`,message.channel).catch(console.error);
 
     queue.playing = true;
 
@@ -39,7 +39,7 @@ module.exports = {
       }catch (error) {
         queue.voiceChannel.leave()
         message.client.queue.delete(message.guild.id);
-       return sendError(`:notes: O jogador parou e a fila foi liberada. ${error}`, message.channel);
+       return sendError(`<:info:835206734225473546> | O jogador parou e a fila foi liberada. ${error}`, message.channel);
       }
     
     queue.textChannel.send({

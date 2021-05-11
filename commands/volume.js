@@ -20,8 +20,8 @@ module.exports = {
     serverQueue.volume = args[0]; 
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
     let spray = new MessageEmbed()
-    .setDescription(`Eu ajustei o volume para: **${args[0]/1}/100**`)
-    .setAuthor("Gerenciamento do volume", "https://cdn.discordapp.com/attachments/754170388115619872/784270025577463849/7b7a49c20326e3cbfdccb534ca0366f1.gif")
+    .setDescription(`<:info:835206734225473546> | Eu ajustei o volume para: **${args[0]/1}/100**`)
+    .setAuthor("<:info:835206734225473546> | Gerenciamento do volume", "https://cdn.discordapp.com/attachments/754170388115619872/784270025577463849/7b7a49c20326e3cbfdccb534ca0366f1.gif")
     .setColor("BLUE")
     return message.channel.send(spray);
   },

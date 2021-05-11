@@ -29,6 +29,6 @@ module.exports = {
         if (err) console.error(err);
     });
         };
-    return sendError("Não ha nada tocando.", message.channel);
+    return sendError("ℹ️ | Não ha nada tocando.", message.channel);
   },
 };

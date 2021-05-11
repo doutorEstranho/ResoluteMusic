@@ -14,7 +14,7 @@ exports.run = async (bot, message, args) => {
       > **<:spr4yxyz:837798446584168468> | s.setmoney (Admin)**
       > **<:spr4yxyz:837798446584168468> | s.trabalhar**
       \n » **Links:**
-      > http://spr4y.xyz/resolute
+      > resolutebot.xyz/music
     `)
     .setImage("http://pa1.narvii.com/5763/85377e06886cbaa577b87952dd985919f3ad0e38_00.gif")
     .setThumbnail("https://media0.giphy.com/media/l2SpN0gAfO6yfw4A8/source.gif")  

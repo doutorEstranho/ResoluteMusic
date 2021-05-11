@@ -1,7 +1,7 @@
 {
   "name": "resolutemusic",
   "version": "1.0.0",
-  "description": "music",
+  "description": "extensao de musica",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

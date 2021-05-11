@@ -34,7 +34,7 @@ if(!serverQueue.connection.dispatcher)return
       } catch (error) {
         serverQueue.voiceChannel.leave()
         message.client.queue.delete(message.guild.id);
-        return sendError(`<:info:835206734225473546> |  O jogador parou e a fila foi liberada. ${error}`, message.channel);
+        return sendError(`<:info:835206734225473546> | O jogador parou e a fila foi liberada. ${error}`, message.channel);
       }
     message.react("✅")
   },

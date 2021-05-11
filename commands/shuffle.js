@@ -11,7 +11,7 @@ module.exports = {
 
   run: async function (client, message, args) {
     const serverQueue = message.client.queue.get(message.guild.id);
-    if (!serverQueue) return sendError("Não ha fila",message.channel).catch(console.error);
+    if (!serverQueue) return sendError("<:info:835206734225473546> | Não ha fila",message.channel).catch(console.error);
 try{
     let songs = serverQueue.songs;
     for (let i = songs.length - 1; i > 1; i--) {
@@ -24,7 +24,7 @@ try{
       } catch (error) {
         message.guild.me.voice.channel.leave();
         message.client.queue.delete(message.guild.id);
-        return sendError(`:notes: O jogador parou e a fila foi liberada. \`${error}\``, message.channel);
+        return sendError(`<:info:835206734225473546> | O jogador parou e a fila foi liberada. \`${error}\``, message.channel);
      }
   },
 };

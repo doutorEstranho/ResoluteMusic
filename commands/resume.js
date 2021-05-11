@@ -17,7 +17,7 @@ module.exports = {
       let xd = new MessageEmbed()
       .setDescription("Musica despausada.")
       .setColor("YELLOW")
-      .setAuthor("Musica despausada!", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Musica despausada!", "https://cdn.discordapp.com/attachments/837826996460453898/841740447226527754/blurple.png")
       return message.channel.send(xd);
     }
     return sendError("Não esta tocando nesse servidor", message.channel);

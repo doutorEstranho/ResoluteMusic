@@ -11,7 +11,7 @@ module.exports = {
     name: "search",
     description: "Para pesquisar musicas",
     usage: "",
-    aliases: ["sc"],
+    aliases: ["sc", "procurar", "buscar"],
   },
 
   run: async function (client, message, args) {

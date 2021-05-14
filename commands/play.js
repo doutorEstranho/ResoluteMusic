@@ -10,7 +10,7 @@ module.exports = {
     name: "play",
     description: "Tocar qualquer Musica!",
     usage: "",
-    aliases: ["p"],
+    aliases: ["p", "tocar"],
   },
 
   run: async function (client, message, args) {

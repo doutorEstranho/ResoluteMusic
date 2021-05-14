@@ -20,7 +20,7 @@ module.exports = {
                 }
             });
         };
-    return sendError("Não esta tocando nesse servidor", message.channel);
+    return sendError("Não ha nada tocando neste servidor.", message.channel);
   },
 };
 

@@ -8,7 +8,7 @@ module.exports = {
     name: "afk",
     description: "24/7",
     usage: "",
-    aliases: ["24/7"],
+    aliases: ["24/7", "off", "away-from-keyboard"],
   },
 
   run: async function (client, message, args) {

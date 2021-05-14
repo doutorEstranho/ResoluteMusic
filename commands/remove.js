@@ -16,7 +16,7 @@ module.exports = {
     if (isNaN(args[0])) return sendError(`Use: ${client.config.prefix}\`remove <Numero da fila>\``);
     if (queue.songs.length == 1) return sendError("Não ha fila",message.channel).catch(console.error);
     if (args[0] > queue.songs.length)
-      return sendError(`Só tem: ${queue.songs.length} Musicas na fila!`,message.channel).catch(console.error);
+      return sendError(`Tem apenas: ${queue.songs.length} Musicas na fila!`,message.channel).catch(console.error);
 try{
     const song = queue.songs.splice(args[0] - 1, 1); 
     sendError(`❌ **|** Removida: **\`${song[0].title}\`** Da fila.`,queue.textChannel).catch(console.error);

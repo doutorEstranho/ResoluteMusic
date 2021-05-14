@@ -6,7 +6,7 @@ module.exports = {
     name: "remove",
     description: "Remover a musica da fila",
     usage: "",
-    aliases: ["rm"],
+    aliases: ["rm", "remover"],
   },
 
   run: async function (client, message, args) {

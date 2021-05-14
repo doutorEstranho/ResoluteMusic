@@ -6,7 +6,7 @@ module.exports = {
     name: "queue",
     description: "mostrar musicas na fila",
     usage: "",
-    aliases: ["q", "list", "songlist", "song-list"],
+    aliases: ["q", "list", "songlist", "song-list", "fila"],
   },
 
   run: async function (client, message, args) {

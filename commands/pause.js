@@ -6,7 +6,7 @@ module.exports = {
     name: "pause",
     description: "Para pausar a musica que está tocando",
     usage: "",
-    aliases: ["pause"],
+    aliases: ["pause", "pausar"],
   },
 
   run: async function (client, message, args) {

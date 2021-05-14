@@ -24,7 +24,7 @@ exports.run = async (bot, message, args) => {
       \n » **Links:**
       > resolutebot.xyz/music
     `)
-    .setImage("http://pa1.narvii.com/5763/85377e06886cbaa577b87952dd985919f3ad0e38_00.gif")
+    //.setImage("ta")
     .setThumbnail("https://media0.giphy.com/media/l2SpN0gAfO6yfw4A8/source.gif")  
 
     message.channel.send(embed)

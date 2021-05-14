@@ -10,6 +10,8 @@ client.config = {
   prefix: process.env.PREFIX
 }
 
+
+//eventos
 fs.readdir(__dirname + "/events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
@@ -20,6 +22,8 @@ fs.readdir(__dirname + "/events/", (err, files) => {
   });
 });
 
+
+//comandos
 fs.readdir("./commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {

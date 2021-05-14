@@ -5,7 +5,7 @@ module.exports = {
     name: "invite",
     description: "Para adicionar/convidar o bot para o seu servidor",
     usage: "",
-    aliases: ["inv"],
+    aliases: ["inv", "invitar", "convidar"],
   },
 
   run: async function (client, message, args) {

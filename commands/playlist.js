@@ -14,7 +14,7 @@ module.exports = {
 		name: "playlist",
 		description: "Tocar musicas da playlist",
 		usage: "",
-		aliases: ["pl"],
+		aliases: ["pl", "album"],
 	},
 
 	run: async function (client, message, args) {

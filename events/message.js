@@ -10,7 +10,7 @@ module.exports = async (client, message) => {
   
 process.on("unhandledRejection", (reason, promise) => {
     try {
-        console.error("Unhandled Rejection at: ", promise, "reason: ", reason.stack || reason);
+        console.error("[]Rejeição não tratada em: ", promise, "Razão: ", reason.stack || reason);
     } catch {
         console.error(reason);
     }

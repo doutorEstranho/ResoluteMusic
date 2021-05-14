@@ -7,7 +7,7 @@ module.exports = {
     name: "lyrics",
     description: "Obtenha letras para a música atualmente tocando",
     usage: "",
-    aliases: ["ly"],
+    aliases: ["ly", "letra", "lt"],
   },
 
   run: async function (client, message, args) {
